@@ -22,9 +22,7 @@ body {
     font-weight: bolder;
   }
   
-#highscore,
-#score-container,
-#timer-container {
+p {
     margin-left: 3%;
     
     color: #ccc;
@@ -46,7 +44,7 @@ body {
     border-radius: 4px;
   }
   
-#word-guess-form button {
+#word-guess-form #submit {
     padding: 0.5rem 1rem;
     font-size: 1rem;
     background-color: #2ecc71;
@@ -55,6 +53,13 @@ body {
     cursor: pointer;
     border-radius: 4px;
   }
-  
-  
+
+#word-guess-form #submit:hover{
+  background-color: #27ae60;
+}
+
+#word-guess-form #submit.game-ended{
+  background-color: #808080;
+  cursor: not-allowed;
+}
   

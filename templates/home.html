@@ -21,16 +21,16 @@
     </table>
 
 
-    <p id="highscore">High Score:
-        <b>{{ highscore }}</b>
-        in {{ nplays }} plays</span>
+    <p> High Score:
+        <b id="highscore">{{ highscore }}</b>
+        in <span>{{ nplays }}</span> plays
     </p>
 
-    <p id="score-container">Score:
+    <p> Score:
         <b id="score">{{ score }}</b>
     </p>
 
-    <p id="timer-container">
+    <p>
         Time Remaining: <b id="timer"></b>
     </p>
 
@@ -40,7 +40,7 @@
 
     <form id="word-guess-form" action="/check-word" method="POST">
         <input type="text" name="word" placeholder="Enter a word">
-        <button>Submit</button>
+        <button id="submit">Submit</button>
     </form>
 
     
