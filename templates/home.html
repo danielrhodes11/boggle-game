@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/app.css">
+    <title>Boggle Game</title>
+</head>
+<body>
+    <h1>Boggle</h1>
+
+    <table id="board">
+        {% for row in board %}
+            <tr>
+                {% for letter in row %}
+                    <td>{{ letter }}</td>
+                {% endfor %}    
+            </tr>
+        {% endfor %}
+    </table>
+
+
+    <p id="highscore">High Score:
+        <b>{{ highscore }}</b>
+        in {{ nplays }} plays</span>
+    </p>
+
+    <p id="score-container">Score:
+        <b id="score">{{ score }}</b>
+    </p>
+
+    <p id="timer-container">
+        Time Remaining: <b id="timer"></b>
+    </p>
+
+     
+
+
+
+    <form id="word-guess-form" action="/check-word" method="POST">
+        <input type="text" name="word" placeholder="Enter a word">
+        <button>Submit</button>
+    </form>
+
+    
+
+    
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="/static/app.js"></script>   
+</body>
+</html>

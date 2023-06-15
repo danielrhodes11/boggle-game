@@ -1,0 +1,60 @@
+h1 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+
+body {
+    background-color: #222222f3;
+    color: #fff;
+  }
+  
+#board {
+    width: 80%;
+    height: 23rem;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  
+#highscore,
+#score-container,
+#timer-container {
+    margin-left: 3%;
+    
+    color: #ccc;
+    font-size: 20px;
+  }
+  
+#word-guess-form {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+#word-guess-form input {
+    width: 12rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+  }
+  
+#word-guess-form button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #2ecc71;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  
+  
